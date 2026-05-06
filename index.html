@@ -90,10 +90,26 @@
   .paper-meta{color:var(--muted); display:block; margin-top:4px}
   .paper-status{color:var(--muted); display:block; margin-top:4px; font-size:.95rem}
   .paper-status .sep{margin:0 8px; color:var(--muted)}
-  .paper-links{margin-top:8px; font-size:.95rem}
-  .paper-links a{margin-right:10px}
-  .cite-btn{cursor:pointer; background:none; border:none; padding:0; font:inherit; color:var(--blue-link); margin-right:10px}
-  .cite-btn:hover{text-decoration:underline}
+  .paper-links{margin-top:10px; font-size:.9rem; display:flex; flex-wrap:wrap; gap:8px}
+  .paper-links a, .paper-links .cite-btn{
+    display:inline-block;
+    border:1px solid var(--blue-link);
+    border-radius:6px;
+    padding:5px 14px;
+    color:var(--blue-link);
+    background:#fff;
+    text-decoration:none;
+    cursor:pointer;
+    font:inherit;
+    font-size:.9rem;
+    margin:0;
+    line-height:1.3;
+  }
+  .paper-links a:hover, .paper-links .cite-btn:hover{
+    background:var(--blue-link);
+    color:#fff;
+    text-decoration:none;
+  }
   dialog.cite-dialog{
     border:1px solid var(--border); border-radius:8px; padding:0;
     max-width:620px; width:92%;
@@ -209,9 +225,9 @@
             <span class="paper-meta">(with <a href="https://sites.google.com/site/laurapilossoph/" target="_blank" rel="noopener">Laura Pilossoph</a> and <a href="https://janeryngaert.github.io/#!/home" target="_blank" rel="noopener">Jane Ryngaert</a>)</span>
             <span class="paper-status">December 2025<span class="sep">·</span>Working Paper</span>
             <div class="paper-links">
-              <a href="https://drive.google.com/file/d/1V6PlWWUxd2FnG4UxxrqbSJQDOjFcjr-o/view?usp=sharing" target="_blank" rel="noopener">[Draft]</a>
-              <a href="https://drive.google.com/file/d/14WVKXEEAO5ulGyH_1FmDm0IhRlv29b94/view" target="_blank" rel="noopener">[Slides]</a>
-              <button class="cite-btn" data-bibtex="@article{pilossoph2025search,&#10;  title={The Search Costs of Inflation},&#10;  author={Pilossoph, Laura and Ryngaert, Jane and Wedewer, Jesse},&#10;  year={2025}&#10;}">[Cite]</button>
+              <a href="https://drive.google.com/file/d/1V6PlWWUxd2FnG4UxxrqbSJQDOjFcjr-o/view?usp=sharing" target="_blank" rel="noopener">Draft</a>
+              <a href="https://drive.google.com/file/d/14WVKXEEAO5ulGyH_1FmDm0IhRlv29b94/view" target="_blank" rel="noopener">Slides</a>
+              <button class="cite-btn" data-bibtex="@article{pilossoph2025search,&#10;  title={The Search Costs of Inflation},&#10;  author={Pilossoph, Laura and Ryngaert, Jane and Wedewer, Jesse},&#10;  year={2025}&#10;}">Cite</button>
             </div>
             <details>
               <summary>Abstract (click to expand)</summary>
@@ -228,10 +244,10 @@
             <span class="paper-meta">(with <a href="https://sites.google.com/view/natalia-khorunzhina" target="_blank" rel="noopener">Natalia Khorunzhina</a> and <a href="https://www.runlingwu.com/" target="_blank" rel="noopener">Runling Wu</a>)</span>
             <span class="paper-status">December 2025<span class="sep">·</span>Working Paper</span>
             <div class="paper-links">
-              <a href="https://dx.doi.org/10.2139/ssrn.5982736" target="_blank" rel="noopener">[SSRN Draft]</a>
-              <a href="https://research-api.cbs.dk/ws/portalfiles/portal/121368045/ECON_WP_1.pdf" target="_blank" rel="noopener">[CBS WP 1-2026]</a>
-              <a href="https://ifs.org.uk/publications/intergenerational-mobility-welfare-wages-and-amenities" target="_blank" rel="noopener">[IFS WP 26/09]</a>
-              <button class="cite-btn" data-bibtex="@article{khorunzhina2025intergenerational,&#10;  title={Intergenerational Mobility in Welfare: Wages and Amenities},&#10;  author={Khorunzhina, Natalia and Wedewer, Jesse and Wu, Runling},&#10;  year={2025}&#10;}">[Cite]</button>
+              <a href="https://dx.doi.org/10.2139/ssrn.5982736" target="_blank" rel="noopener">SSRN Draft</a>
+              <a href="https://research-api.cbs.dk/ws/portalfiles/portal/121368045/ECON_WP_1.pdf" target="_blank" rel="noopener">CBS WP 1-2026</a>
+              <a href="https://ifs.org.uk/publications/intergenerational-mobility-welfare-wages-and-amenities" target="_blank" rel="noopener">IFS WP 26/09</a>
+              <button class="cite-btn" data-bibtex="@article{khorunzhina2025intergenerational,&#10;  title={Intergenerational Mobility in Welfare: Wages and Amenities},&#10;  author={Khorunzhina, Natalia and Wedewer, Jesse and Wu, Runling},&#10;  year={2025}&#10;}">Cite</button>
             </div>
             <details>
               <summary>Abstract (click to expand)</summary>
@@ -246,7 +262,7 @@
             <span class="paper-meta">(with <a href="https://www.xinchengqiu.com/" target="_blank" rel="noopener">Xincheng Qiu</a> and <a href="https://www.runlingwu.com/" target="_blank" rel="noopener">Runling Wu</a>)</span>
             <span class="paper-status">May 2026<span class="sep">·</span>Working Paper</span>
             <div class="paper-links">
-              <button class="cite-btn" data-bibtex="@unpublished{qiu2026worker,&#10;  title={The Worker and Firm Origins of Life-Cycle Wage Inequality},&#10;  author={Qiu, Xincheng and Wedewer, Jesse and Wu, Runling},&#10;  year={2026}&#10;}">[Cite]</button>
+              <button class="cite-btn" data-bibtex="@unpublished{qiu2026worker,&#10;  title={The Worker and Firm Origins of Life-Cycle Wage Inequality},&#10;  author={Qiu, Xincheng and Wedewer, Jesse and Wu, Runling},&#10;  year={2026}&#10;}">Cite</button>
             </div>
             <details>
               <summary>Abstract (click to expand)</summary>
@@ -263,9 +279,9 @@
             <span class="paper-meta">(with Hie Joo Ahn, Thomas R. Cook, Taeyoung Doh, and Elias Kastriti)</span>
             <span class="paper-status">December 2025<span class="sep">·</span>Working Paper</span>
             <div class="paper-links">
-              <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5812002" target="_blank" rel="noopener">[Draft]</a>
-              <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5812002" target="_blank" rel="noopener">[FRB Kansas City WP RWP25-18]</a>
-              <button class="cite-btn" data-bibtex="@article{ahn2025text,&#10;  title={Text Sentiment about Monetary Policy},&#10;  author={Ahn, Hie Joo and Cook, Thomas R. and Doh, Taeyoung and Kastriti, Elias and Wedewer, Jesse},&#10;  year={2025}&#10;}">[Cite]</button>
+              <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5812002" target="_blank" rel="noopener">Draft</a>
+              <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5812002" target="_blank" rel="noopener">FRB Kansas City WP RWP25-18</a>
+              <button class="cite-btn" data-bibtex="@article{ahn2025text,&#10;  title={Text Sentiment about Monetary Policy},&#10;  author={Ahn, Hie Joo and Cook, Thomas R. and Doh, Taeyoung and Kastriti, Elias and Wedewer, Jesse},&#10;  year={2025}&#10;}">Cite</button>
             </div>
             <details>
               <summary>Abstract (click to expand)</summary>
