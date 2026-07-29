@@ -29,17 +29,18 @@
 
   <style>
   :root{
-    --ink:#111; --muted:#666; --faint:#666;
-    --navy:#111; --navy-soft:#111;
-    --rule:#eaeaea; --rule-strong:#eaeaea;
-    --chip:#f1f1f1; --chip-hover:#ddd;
+    --ink:#1b1b1b; --muted:#6a6a6a; --faint:#8c8c8c;
+    --navy:#1f3a5f; --navy-soft:#2c4c78;
+    --rule:#e2e2e2; --rule-strong:#c9d2df;
+    --chip:#f3f4f7; --chip-hover:#e6e8ee;
     --paper:#ffffff;
   }
   *{box-sizing:border-box}
   html,body{margin:0}
   body{
     font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji";
-    color:var(--ink); line-height:1.6; background:var(--paper);
+    color:var(--ink); line-height:1.65; background:var(--paper);
+    -webkit-font-smoothing:antialiased;
   }
 
   /* ——— Layout ——— */
@@ -78,8 +79,8 @@
     list-style:none; padding:0; margin:18px 0 8px;
     display:flex; align-items:center; justify-content:center; gap:18px;
   }
-  .social-icons a{color:#444; display:inline-flex; transition:color .2s ease}
-  .social-icons a:hover{color:#0077cc}
+  .social-icons a{color:#555; display:inline-flex; transition:color .2s ease}
+  .social-icons a:hover{color:var(--navy)}
   .social-icons svg{display:block; width:21px; height:21px}
   .cv-line{margin:10px 0 0; font-size:.95rem}
   .cv-line a{color:var(--navy); font-weight:700}
@@ -100,7 +101,7 @@
   }
   p{margin:0 0 14px}
 
-  .lead{font-size:1rem}
+  .lead{font-size:1.02rem}
   .jm-statement{
     font-weight:700; color:var(--ink);
     margin:16px 0;
@@ -112,11 +113,11 @@
   .papers{list-style:none; padding:0; margin:0}
   .paper{margin:0 0 30px}
   .paper:last-child{margin-bottom:0}
-  .paper-title{font-weight:700; display:block; color:#546096}
-  .paper-title a{color:#546096}
+  .paper-title{font-weight:700; display:block; color:var(--navy)}
+  .paper-title a{color:var(--navy)}
   .paper-title .status{font-weight:400; font-style:italic; color:var(--muted); margin-left:5px; font-size:.95rem}
-  .paper-meta{color:var(--muted); display:block; margin-top:4px}
-  .paper-status{color:#111; display:block; margin-top:4px; font-size:.95rem}
+  .paper-meta{color:var(--muted); display:block; margin-top:3px; font-size:.97rem}
+  .paper-status{color:var(--faint); display:block; margin-top:3px; font-size:.9rem; font-style:italic}
   .paper-status .sep{margin:0 7px}
   .paper-links{margin-top:10px; display:flex; flex-wrap:wrap; gap:9px}
   .paper-links a, .paper-links .cite-btn, .paper-links .abstract-btn{
@@ -270,8 +271,7 @@
 
       <section id="reading-group">
         <h2>“The Micro and Macro Perspective of the Labor Market” Reading Group</h2>
-        <p><a href="https://www.runlingwu.com/" target="_blank" rel="noopener">Runling Wu</a> and I co-organize the “Micro and Macro Perspective of the Labor Market” Virtual Reading Group at Duke since 2023. An archive can be found <a href="https://docs.google.com/spreadsheets/d/1wGIQPnqIEQkiupWEc0t0tkkEyHI8ndEdkuNp-LQFFL8/edit?usp=sharing" target="_blank" rel="noopener">here</a>.</p>
-        <p>Please contact <a href="mailto:labor.public@gmail.com">labor.public@gmail.com</a> if you are interested in participating. Meetings are on Saturdays at 11&nbsp;AM (ET) via Zoom.</p>
+        <p><a href="https://www.runlingwu.com/" target="_blank" rel="noopener">Runling Wu</a> and I co-organize the “Micro and Macro Perspective of the Labor Market” Virtual Reading Group/Workshop at Duke. An archive is available <a href="https://docs.google.com/spreadsheets/d/1wGIQPnqIEQkiupWEc0t0tkkEyHI8ndEdkuNp-LQFFL8/edit?usp=sharing" target="_blank" rel="noopener">here</a>. Meetings are Saturdays at 11&nbsp;AM (ET) via Zoom; please write to <a href="mailto:labor.public@gmail.com">labor.public@gmail.com</a> to participate.</p>
       </section>
 
       <section id="contact">
